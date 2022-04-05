@@ -1,0 +1,603 @@
+2022-04-03 18:11:30 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: G_market)
+2022-04-03 18:11:30 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.2.0, Python 3.9.7 (default, Sep 16 2021, 13:09:58) - [GCC 7.5.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 3.4.8, Platform Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31
+2022-04-03 18:11:30 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'G_market',
+ 'FEED_EXPORT_ENCODING': 'utf-8-sig',
+ 'LOG_FILE': 'G_market.log',
+ 'NEWSPIDER_MODULE': 'G_market.spiders',
+ 'SPIDER_MODULES': ['G_market.spiders']}
+2022-04-03 18:11:30 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-04-03 18:11:30 [scrapy.extensions.telnet] INFO: Telnet Password: e543853af2748cf4
+2022-04-03 18:11:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-04-03 18:11:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-04-03 18:11:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-04-03 18:11:30 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-04-03 18:11:30 [scrapy.core.engine] INFO: Spider opened
+2022-04-03 18:11:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-04-03 18:11:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2022-04-03 18:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8> (referer: None)
+2022-04-03 18:11:33 [filelock] DEBUG: Attempting to acquire lock 139907133545968 on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Lock 139907133545968 acquired on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Attempting to acquire lock 139907133580240 on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Lock 139907133580240 acquired on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Attempting to release lock 139907133580240 on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Lock 139907133580240 released on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Attempting to release lock 139907133545968 on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-04-03 18:11:33 [filelock] DEBUG: Lock 139907133545968 released on /home/hoo/.cache/python-tldextract/3.9.7.final__anaconda3__4c0c59__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2326212205> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2192044502> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2023179994> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2326212205>
+{'Delivery_charge': '무료배송',
+ 'Name': '삼성 갤럭시 북 NT750XDZ-AM58S 미스틱 실버 ',
+ 'Price': '750,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=694896609'}
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1945334375> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2224699047> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2072388832> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2192044502>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Slim3-15ITL 5D 인텔 11세대 i5/8GB 메모리/256GB/블루 ',
+ 'Price': '639,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2362603054'}
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2023179994>
+{'Delivery_charge': '무료배송',
+ 'Name': 'X515EA-BQ040 (중복10%+카드5% 최종49만) ASUS 가성비노트북 인텔 i5-1135G 8GB NVMe '
+         '256GB 프리도스 ',
+ 'Price': '579,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=1867841766'}
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1945334375>
+{'Delivery_charge': '무료배송',
+ 'Name': 'X513EA-BQ031 중복10%+카드5%|최종54만|인기노트북 ',
+ 'Price': '639,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2251182677'}
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2224699047>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Victus 16-e0140AX 노트북 최종82만/한컴/R5/RTX3050 ',
+ 'Price': '965,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2080077896'}
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2245578579> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2072388832>
+{'Delivery_charge': '무료배송',
+ 'Name': 'V15 GEN2-82KD000UKR 43만 AMD 루시엔 R5 NVME 256GB ',
+ 'Price': '479,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=1738788802'}
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2367027024> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2245578579>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 플러스2 NT550XDZ-AD5A 가성비 노트북 ',
+ 'Price': '739,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2224888030'}
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2362363065> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2367027024>
+{'Delivery_charge': '무료배송',
+ 'Name': 'G713RC-HX011 R7 렘브란트 17인치 게이밍 최종 123만대 ',
+ 'Price': '1,349,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2302027861'}
+2022-04-03 18:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1842854577> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2326031558> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1954247287> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2362363065>
+{'Delivery_charge': '무료배송',
+ 'Name': 'TUF F17 FX707ZM-HX037 게이밍노트북 인텔 12세대 탑재 ',
+ 'Price': '1,649,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2337847674'}
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1842854577>
+{}
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2326031558>
+{'Delivery_charge': '무료배송',
+ 'Name': '아이디어패드 SLIM5-15ALC R5 82LN00J1KR 16GB/256GB ',
+ 'Price': '699,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2362305349'}
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1954247287>
+{}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2233485349> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2077947063> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2233485349>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS 노트북 M513UA-L1284 최종59만/삼성OLED/R5-5500U ',
+ 'Price': '699,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2387760583'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2093909862> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2182480740> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2077947063>
+{'Delivery_charge': '무료배송',
+ 'Name': 'X515EA-BQ043 중복10%+카드5%|최종39만|실버||IPS ',
+ 'Price': '459,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2048998053'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2118409802> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2093909862>
+{}
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2182480740>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ThinkBook 15 G3 ACL세잔-21A4004MKR R5/256G ',
+ 'Price': '649,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=1833695807'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2031970538> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2362603054> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2118409802>
+{'Delivery_charge': '무료배송',
+ 'Name': '갤럭시북 NT750XDZ-A51A 1.55kg 15인치 대학생추천 ',
+ 'Price': '999,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2233438242'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2254337715> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2031970538>
+{'Delivery_charge': '무료배송',
+ 'Name': '2021 울트라PC 15UD50P-GX50K WIN10 RAM 16GB FC ',
+ 'Price': '884,550',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2394422222> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2362603054>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS ROG G713RM-KH053 신규 라이젠 5세대 렘브란트 ',
+ 'Price': '1,699,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2254337715>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Slim3 15ITL 5D 램8G+NVME256G 노트북 기본 블루색상 ',
+ 'Price': '648,720',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2397736183> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2328520313> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2394422222>
+{'Delivery_charge': '무료배송',
+ 'Name': 'UM3402YA-KP103 특99만R5-5625U/16GB/NVMe512GB ',
+ 'Price': '1,099,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2397736183>
+{'Delivery_charge': '무료배송',
+ 'Name': 'NT950XDX-G51A WIN10+NVMe512GB교체 키스킨+파우치 HM ',
+ 'Price': '1,439,500',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2328520313>
+{}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2320262660> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2051709661> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2320262660>
+{'Delivery_charge': '무료배송',
+ 'Name': '14ZD95P-GX50K 115만구.매 LG그램 가성비 대학생노트북 ',
+ 'Price': '1,269,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2051709661>
+{'Delivery_charge': '무료배송',
+ 'Name': '울트라PC 15UD50P-GX30K 재고보유 (256GB/8GB/Win10) ',
+ 'Price': '689,800',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1785592019> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2337847674> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1592375993> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2005964440> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1785592019>
+{}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2337847674>
+{'Delivery_charge': '무료배송',
+ 'Name': '14ZD95P-GX56K 2022 그램 무선마우스 마우스패드 증정 ',
+ 'Price': '1,549,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1513503751> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1592375993>
+{}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2309875598> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2005964440>
+{'Delivery_charge': '무료배송',
+ 'Name': 'TUF 게이밍 FX516PR-AZ019 한정156만/RTX3070/240Hz ',
+ 'Price': '1,698,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1513503751>
+{}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2048998053> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2309875598>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG그램 2022 신제품 15ZD95P-GX56K 134만 16GB 노트북 ',
+ 'Price': '1,469,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1833695807> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2048998053>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG전자 울트라PC 15UD50P-GX50K 당일출고 LG정품 ',
+ 'Price': '811,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1833695807>
+{'Delivery_charge': '무료배송',
+ 'Name': '갤럭시북 S NT767XCL-KLTE 최종 82만 대학생노트북 ',
+ 'Price': '979,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2379358322> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2090375749> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1749069778> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2321757318> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2379358322>
+{'Delivery_charge': '무료배송',
+ 'Name': '게이밍 FX517ZR-HQ009 특가189만 RTX3070/인텔12세대i7 ',
+ 'Price': '2,049,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2090375749>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG전자 PC그램 15Z960 i5 8G SSD256 Win10 ',
+ 'Price': '616,550',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2236906619> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1749069778>
+{}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2321757318>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Slim3-14ITL PD 82H700KXKR 팬티엄/4GB/128GB/DOS ',
+ 'Price': '349,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2236906619>
+{}
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2233438242> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2288652385> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2169961706> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2233438242>
+{'Delivery_charge': '무료배송',
+ 'Name': '비보북 Pro 15 OLED M3500QC-L1085 최종123만/당일발송 ',
+ 'Price': '1,349,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2288652385>
+{}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2169961706>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Legion 5i Pro 16ITH i7 STORM 3060/게이밍/최종 170만 ',
+ 'Price': '1,799,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2118263118> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2027658780> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=845375476> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2118263118>
+{'Delivery_charge': '무료배송',
+ 'Name': '갤럭시북 NT750XDZ-A71A CPU i7 16GB 고성능 당일출고 ',
+ 'Price': '1,299,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2027658780>
+{}
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2381258244> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=845375476>
+{}
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2099995921> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1722356297> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2379381686> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2381258244>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG그램 17ZD90Q-EX76K 외장그래픽 RTX 2050  i7 22년형 ',
+ 'Price': '2,399,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2387760583> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2099995921>
+{'Delivery_charge': '무료배송',
+ 'Name': '갤럭시북 프로360 NT950QDY-A51A 139만 SSD256G증정 ',
+ 'Price': '1,698,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1722356297>
+{}
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2379381686>
+{'Delivery_charge': '무료배송',
+ 'Name': 'FX517ZM-HQ076 인텔12세대/RTX3060/WQHD 예약판매 ',
+ 'Price': '1,849,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2356918331> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2387760583>
+{'Delivery_charge': '무료배송',
+ 'Name': '그램360 16TD90Q-GX56K 노트북 22년 신제품 ',
+ 'Price': '1,999,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2356918331>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG전자  LG 그램17 노트북 17Z95N-G.ARFMK  인텔11세대 i5/512GB ',
+ 'Price': '1,450,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2362305349> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2193410627> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2362305349>
+{}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1621548500> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1560030835> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2193410627>
+{}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2131010415> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1621548500>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG 그램 14Z960 i5-6200 8G SSD256G Win10 ',
+ 'Price': '474,050',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1560030835>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 더블더블UP 레노버 씽크패드 L540 i5 15형 윈10 ',
+ 'Price': '349,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2131010415>
+{'Delivery_charge': '무료배송',
+ 'Name': '파빌리온 Aero 13-be0143AU 특가67만 R5 초경량노트북 ',
+ 'Price': '799,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1971468065> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1255508793> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1971468065>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 플러스2 NT560XDZ-G78A 특가123만 게이밍노트북 ',
+ 'Price': '1,449,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=846372591> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1738310190> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1255508793>
+{}
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=846372591>
+{}
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1738310190>
+{}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2090294447> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2090294447>
+{'Delivery_charge': '무료배송',
+ 'Name': '젠북 OLED UX325EA-KG354T 특가94만 WIN10탑재/인텔i7 ',
+ 'Price': '1,099,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2224888030> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2329912525> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2119172221> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2302027861> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2224888030>
+{'Delivery_charge': '무료배송',
+ 'Name': '맥북에어 M1칩 13형 512GB Space Gray  MGN73KH/A ',
+ 'Price': '1,543,410',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2019105052> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2329912525>
+{}
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2119172221>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS TUF FX506LH-HN002 한정200대 GTX1650/당일출고 ',
+ 'Price': '845,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1957039357> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2302027861>
+{'Delivery_charge': '무료배송',
+ 'Name': 'K3500PC-L1154 중복5%+카드5%|최종104만|OLED|RTX3050 ',
+ 'Price': '1,149,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2019105052>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG전자 그램16 16ZD90P-GX50K 정품 재고보유 ',
+ 'Price': '1,464,900',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2345132511> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1957039357>
+{'Delivery_charge': '무료배송',
+ 'Name': '맥북에어 13형 512GB Space Gray MGN73KH/A ',
+ 'Price': '1,475,900',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2253637228> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2345132511>
+{'Delivery_charge': '무료배송',
+ 'Name': 'A7 K1 R7 특가137만 게이밍 노트북 라이젠 R7/RTX3060 ',
+ 'Price': '1,673,070',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2253637228>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS M7600QE-L2041 147만/R9-5900HX/16G/512G/3050Ti ',
+ 'Price': '1,649,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1738788802> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1867841766> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1899487882> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1738788802>
+{}
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1867841766>
+{}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2080077896> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1899487882>
+{}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=694896609> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2251182677> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2080077896>
+{'Delivery_charge': '무료배송',
+ 'Name': 'X415MA-EB062 최종가 25만원 (8GB/N4020/M.2 256GB) ',
+ 'Price': '299,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=694896609>
+{}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2193575219> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2251182677>
+{'Delivery_charge': '무료배송',
+ 'Name': '아이디어패드 SSD256+HDD1TB 무상UP L3-15ITL 최종54만 ',
+ 'Price': '549,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2353489151> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2193575219>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Slim5 Pro16IHU6 Superb i7 FreeDos 카드중복최대118만 ',
+ 'Price': '1,249,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2353489151>
+{'Delivery_charge': '무료배송',
+ 'Name': '오멘 16-b1033TX 특가229만 i7 RTX3070Ti 게이밍노트북 ',
+ 'Price': '2,499,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2354699527> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2058433268> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2367786408> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2354699527>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG전자 LG그램 15ZD95P-GX56K  / SSD 512GB 교체 ',
+ 'Price': '1,481,600',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2332066770> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2058433268>
+{'Delivery_charge': '무료배송',
+ 'Name': 'SLIM5-15ITL Premiere i5 Plus FreeDos 카드중복 80만 ',
+ 'Price': '849,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2367786408>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS TUF F15 FX506HM-HN130 /RTX 3060 /최종가 109만 ',
+ 'Price': '1,199,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2346705752> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2308169322> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2242504704> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2332066770>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS 젠북듀오 UX482EGR-KA377W 최종164만 i7/MX450/1T ',
+ 'Price': '1,829,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2346705752>
+{'Delivery_charge': '무료배송',
+ 'Name': '17ZD95P-GX76K SSD 512GB 교체장착 무선마우스 증정 ',
+ 'Price': '1,745,450',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2308169322>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LG 그램16 16ZD95P-GX56K 최종151만 신모델 인텔i5 16G ',
+ 'Price': '1,649,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2242504704>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS 젠북 UM325UAZ-KG005 최종80만/OLED/R7/16G/512 ',
+ 'Price': '949,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2088482202> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2365525963> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2088482202>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 플러스2 NT550XDA-K24A 윈11탑재 인강용노트북 ',
+ 'Price': '599,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2365525963>
+{}
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2349427065> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2344868017> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2349427065>
+{'Delivery_charge': '무료배송',
+ 'Name': '15UD40Q-GX50K 2022 울트라PC 마우스 마우스패드 증정 ',
+ 'Price': '762,410',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2344868017>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS K3500PC-KJ153 최종99만/i5-11300H/16G/256G/3050 ',
+ 'Price': '1,099,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2253589265> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2330388928> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2247386052> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2070230164> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2253589265>
+{'Delivery_charge': '무료배송',
+ 'Name': 'ASUS VivoBook Pro 16X N7600PC-L2007 /142.4만+한컴 ',
+ 'Price': '1,549,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2330388928>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 플러스2 NT550XDZ-AD5A WIN10 RAM 16GB - FC ',
+ 'Price': '848,190',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2247386052>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Victus 16-d0185TX 16인치/게이밍노트북/RTX3050t/dos ',
+ 'Price': '1,179,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2070230164>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 플러스2 NT550XDA-K14A 화이트 최종43만 Win11 ',
+ 'Price': '529,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1807351068> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2362427596> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1807351068>
+{}
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2362427596>
+{'Delivery_charge': '무료배송',
+ 'Name': 'G713RM-LL121 게이밍노트북 R7/RTX3060/WQHD 최종161만 ',
+ 'Price': '1,749,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2023177669> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2124776090> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2063010082> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2118176155> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=1508996257> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2023177669>
+{'Delivery_charge': '무료배송',
+ 'Name': 'X515EA-BQ041 (중복10%+카드5% 최종49만) ASUS 가성비노트북 인텔 i5-1135G 8GB NVMe '
+         '256GB 프리도스 ',
+ 'Price': '579,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2124776090>
+{'Delivery_charge': '무료배송',
+ 'Name': '레노버 아이디어패드 Slim3 14ALC R5 DOS 블루 ',
+ 'Price': '519,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2063010082>
+{'Delivery_charge': '무료배송',
+ 'Name': 'LEGION 5 Pro 16ACH R7 STORM 3060 DOS/최종 159만 ',
+ 'Price': '1,684,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2118176155>
+{'Delivery_charge': '무료배송',
+ 'Name': 'Slim3-15ITL 3D 그레이|인텔11세대 인기 가성비 노트북 ',
+ 'Price': '439,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=1508996257>
+{'Delivery_charge': '무료배송',
+ 'Name': '노트북 무상더블UP 레노버 ThinkPad X260 8G SSD 윈10 ',
+ 'Price': '299,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2118307207> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2118307207>
+{'Delivery_charge': '무료배송',
+ 'Name': '15s-fq2014TU 노트북 최종71만/한컴/11세대 i5/윈11 ',
+ 'Price': '809,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2102001163> (referer: http://browse.gmarket.co.kr/search?keyword=%eb%85%b8%ed%8a%b8%eb%b6%81&s=8)
+2022-04-03 18:11:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://item.gmarket.co.kr/Item?goodscode=2102001163>
+{'Delivery_charge': '무료배송',
+ 'Name': 'TUF FX506HE-HN010 게이밍 노트북  최종109만 GTX3050T ',
+ 'Price': '1,249,000',
+ 'URL': 'http://item.gmarket.co.kr/Item?goodscode=2090375749'}
+2022-04-03 18:11:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-04-03 18:11:42 [scrapy.extensions.feedexport] INFO: Stored csv feed (100 items) in: Test.csv
+2022-04-03 18:11:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 38215,
+ 'downloader/request_count': 101,
+ 'downloader/request_method_count/GET': 101,
+ 'downloader/response_bytes': 4291543,
+ 'downloader/response_count': 101,
+ 'downloader/response_status_count/200': 101,
+ 'elapsed_time_seconds': 12.015203,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 4, 3, 9, 11, 42, 804756),
+ 'httpcompression/response_bytes': 23275075,
+ 'httpcompression/response_count': 101,
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 210,
+ 'log_count/INFO': 11,
+ 'memusage/max': 61841408,
+ 'memusage/startup': 61841408,
+ 'request_depth_max': 1,
+ 'response_received_count': 101,
+ 'scheduler/dequeued': 101,
+ 'scheduler/dequeued/memory': 101,
+ 'scheduler/enqueued': 101,
+ 'scheduler/enqueued/memory': 101,
+ 'start_time': datetime.datetime(2022, 4, 3, 9, 11, 30, 789553)}
+2022-04-03 18:11:42 [scrapy.core.engine] INFO: Spider closed (finished)
