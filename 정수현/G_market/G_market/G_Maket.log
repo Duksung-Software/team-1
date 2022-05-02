@@ -1,0 +1,50 @@
+2022-05-02 11:01:45 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: G_market)
+2022-05-02 11:01:45 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.2.0, Python 3.9.7 (default, Sep 16 2021, 13:09:58) - [GCC 7.5.0], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 3.4.8, Platform Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31
+2022-05-02 11:01:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'G_market',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'G_Maket.log',
+ 'NEWSPIDER_MODULE': 'G_market.spiders',
+ 'SPIDER_MODULES': ['G_market.spiders']}
+2022-05-02 11:01:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-05-02 11:01:45 [scrapy.extensions.telnet] INFO: Telnet Password: 2bdf14fc8e4b623f
+2022-05-02 11:01:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2022-05-02 11:01:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-05-02 11:01:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-05-02 11:01:45 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-05-02 11:01:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-05-02 11:01:46 [asyncio] DEBUG: Using selector: EpollSelector
+2022-05-02 11:01:46 [asyncio] DEBUG: Using selector: EpollSelector
+2022-05-02 11:02:48 [scrapy.core.engine] INFO: Spider opened
+2022-05-02 11:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://browse.gmarket.co.kr/search?keyword=%EB%85%B8%ED%8A%B8%EB%B6%81&s=8> (referer: None)
+2022-05-02 11:41:08 [filelock] DEBUG: Attempting to acquire lock 140464312279104 on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Lock 140464312279104 acquired on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Attempting to acquire lock 140464313459952 on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Lock 140464313459952 acquired on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Attempting to release lock 140464313459952 on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Lock 140464313459952 released on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Attempting to release lock 140464312279104 on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-02 11:41:08 [filelock] DEBUG: Lock 140464312279104 released on /home/suhyun6363/.cache/python-tldextract/3.9.7.final__anaconda3__614205__tldextract-3.2.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-02 11:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2302027861> (referer: None)
+2022-05-02 11:51:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://item.gmarket.co.kr/Item?goodscode=2399942857> (referer: None)
